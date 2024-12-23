@@ -1,4 +1,6 @@
-from countries import *
+import sys
+sys.path.insert(1, 'C:\\Users\\nazar\\Documents\\projects\\30DaysOfPython')
+
 #1.1
 list = []
 #1.2
@@ -71,6 +73,8 @@ rangeAge = max(ages) - min(ages)
 #2.6
 print(abs(minAge - avarageAge) == abs(maxAge - avarageAge))
 #3.1
+from data.countries import *
+
 middleIndex = int(len(countries)/2)
 print(countries[middleIndex])
 #3.2
