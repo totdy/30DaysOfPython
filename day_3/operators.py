@@ -1,5 +1,4 @@
 from math import sqrt
-"""
 #1
 age = 0
 #2
@@ -51,7 +50,6 @@ print('The slope is '+str(slope2)+' and euclidean distance is '+str(euclidean))
 #10
 print(slope1==slope2)
 #12
-"""
 print(len('python') != len('dragon'))
 #13
 print('on' in 'python' and 'on' in 'dragon')

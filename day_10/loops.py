@@ -103,6 +103,6 @@ else:
     else:
         print(mostSpokenLanguage)
 #3.5 with AI 🤷‍♂️
-most_populated_countries = sorted(countriesData, key=lambda country: country['population'], reverse=True)[:10]
+most_populated_countries = sorted(countriesData, key=lambda x: x['population'], reverse=True)[0:10]
 for country in most_populated_countries:
     print(f"{country['name']}: {country['population']}")
