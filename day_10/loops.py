@@ -103,6 +103,7 @@ else:
     else:
         print(mostSpokenLanguage)
 #3.5 with AI 🤷‍♂️
+#UPD now I understand it when sorted() tries to compare keys it actually calls lambda function thats gives it values instead of key and it compares values
 most_populated_countries = sorted(countriesData, key=lambda x: x['population'], reverse=True)[0:10]
 for country in most_populated_countries:
     print(f"{country['name']}: {country['population']}")
