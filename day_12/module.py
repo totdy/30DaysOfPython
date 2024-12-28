@@ -2,7 +2,7 @@
 from random import choice, randint, shuffle
 from string import ascii_letters, digits
 
-def random_user_id(n):
+def random_user_id(n:int):
     randomChars = ''
     for i in range(n): 
         randomChars += choice(ascii_letters + digits)
@@ -23,7 +23,7 @@ def rgb_color_gen():
     return 'rgb({},{},{})'.format(randint(0,255),randint(0,255),randint(0,255))
 print(rgb_color_gen())
 #2
-def generate_colors (colorType, numOfColors):
+def generate_colors (colorType:str, numOfColors:int):
     result = []
     if colorType == 'hexa':
         for i in range(numOfColors):
@@ -40,9 +40,7 @@ print(generate_colors('hexa', 1))
 print(generate_colors('rgb', 3))
 print(generate_colors('rgb', 1))
 #3.1
-def shuffle_list(l):
-    if type(l) != list:
-        return "Error not a list"
+def shuffle_list(l:list):    
     shuffle(l)
     return l
 print(shuffle_list(['14',19,20,24,25,28]))
